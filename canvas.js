@@ -1,6 +1,6 @@
 // canvas.js
 export const canvas = document.getElementById('myCanvas');
-export const c = canvas.getContext('2d', { willReadFrequently: true });
+export const c = canvas.getContext('2d', { willReadFrequently: true }); // 最適化オプションを追加
 
 canvas.width = window.innerWidth - 20;
 canvas.height = window.innerHeight - 100;

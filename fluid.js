@@ -67,7 +67,7 @@ export class Fluid {
 
         //function sample(){
         this.time += dt
-        //document.getElementById("area1").innerText =  this.time;//他の言語に移植するとき外す
+        document.getElementById("area1").innerText =  this.time;//他の言語に移植するとき外す
 
     }
 
