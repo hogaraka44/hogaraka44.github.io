@@ -4,9 +4,9 @@ import { Fluid } from './fluid.js';
 
 // シーン設定
 var scene = {
-    gravity: 0.0,
-    dt: 1.0 / 120.0,
-    numIters: 40,
+    gravity: 0.0,	//[m/s^2]
+    dt: 1.0 / 120.0,	//[t]
+    numIters: 40,	
     frameNr: 0,
     obstacleX: 0.0,
     obstacleY: 0.0,
@@ -161,7 +161,8 @@ function draw() {
 		maxP = Math.max(maxP, f.p[i]);
 	}
 
-	var id = c.getImageData(0,0, canvas.width, canvas.height)
+	//var id = c.getImageData(0,0, canvas.width, canvas.height);
+	var id = c.getImageData(0,0, canvas.width, canvas.height);
 
 	var color = [255, 255, 255, 255]
 

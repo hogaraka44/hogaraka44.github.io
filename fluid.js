@@ -23,14 +23,16 @@ export class Fluid {
         this.m.fill(1.0)
         this.time = 0.0;
     }
-    
+    //u,pを解く, div v = 0が0になれば求回
     solveIncompressibility() { //外部依存なし、非圧縮性について解く
+
+        //
         var numIters = 40;
         var dt = 1/120.0;
         
         var n = this.numY;
         var cp = this.density * this.h / dt;
-
+        
         for (var iter = 0; iter < numIters; iter++) {
 
             for (var i = 1; i < this.numX-1; i++) {
@@ -65,7 +67,7 @@ export class Fluid {
 
         //function sample(){
         this.time += dt
-        document.getElementById("area1").innerText =  this.time;
+        //document.getElementById("area1").innerText =  this.time;//他の言語に移植するとき外す
 
     }
 

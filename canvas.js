@@ -1,6 +1,6 @@
 // canvas.js
 export const canvas = document.getElementById('myCanvas');
-export const c = canvas.getContext('2d');
+export const c = canvas.getContext('2d', { willReadFrequently: true });
 
 canvas.width = window.innerWidth - 20;
 canvas.height = window.innerHeight - 100;
